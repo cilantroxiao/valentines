@@ -5,14 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanks for being my Valentine!</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Container to hold the images */
+        .image-container {
+            display: flex;
+            justify-content: center; /* Centers the images horizontally */
+            gap: 20px; /* Adds space between the images */
+            margin-top: 20px;
+        }
+
+        /* Image styles */
+        .image-container img {
+            max-width: 450px;
+            min-width: 30px;
+            height: auto; /* Maintain aspect ratio */
+
+            object-fit: scale-down; /* Ensures images are scaled and cropped appropriately */
+        }
+
+        /* Optional styling for the container */
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 56px;
+            color: #FF6F61;
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <!-- Gif -->
-        <img src="assets/images/togepi-and-pikachu.gif" id="togepi-gif" alt="a cute picture of togepi"/>
+        <!-- Image Container -->
+        <div class="image-container">
+            <img src="assets/images/shinchan-happy.gif" alt="Image 1">
+            <img src="assets/images/shinchan-xiexie.gif" alt="Image 3">
+            <img src="assets/images/shinchan-kiss.gif" alt="Image 2">
+        </div>
         <!-- Question -->
         <h1 id="message">
-            Thanks for being my Valentine! ⸜(｡˃ ᵕ ˂ )⸝♡
+            I love you sooooo much! ⸜(｡˃ ᵕ ˂ )⸝♡
         </h1>
     </div>
 </body>
